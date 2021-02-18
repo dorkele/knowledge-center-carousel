@@ -22,3 +22,9 @@ body {
     margin-top: 10;
     padding-left: 5%;
 }
+
+@media screen and (max-width: 720px) {
+    .page {
+        margin-left: 5%;
+    }
+}

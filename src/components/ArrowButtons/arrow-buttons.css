@@ -42,3 +42,22 @@
 .right-arrow {
     background-image: url("../../assets/images/right-purple-arrow.png");
 }
+
+@media screen and (max-width: 720px) {
+    .arrows {
+        margin-top: -5%;
+    }
+}
+
+@media screen and (max-width: 720px) and (max-height: 620px) {
+    .arrows {
+        position: relative;
+        left: -5%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .arrows {
+        position: relative;
+        left: -5%;
+    }
+}

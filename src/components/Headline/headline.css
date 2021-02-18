@@ -12,3 +12,13 @@
     font-size: 18px;
     margin-left: 1%;
 }
+
+@media screen and (max-width: 720px) {
+    .headline {
+        font-size: 32px;
+    }
+    .headline + div {
+        font-size: 16px;
+        width: 90%;
+    }
+}
