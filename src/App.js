@@ -1,12 +1,27 @@
-import React from "react";
-import Headline from "./components/Headline";
-import Slider from "./components/Slider";
+import React, { useState, useEffect } from "react";
 
-export default function App() {
+import Headline from "./components/Headline/Headline";
+import Carousel from "./components/Carousel/Carousel";
+import Card from "./components/Card/Card";
+
+import { carouselContent } from "./assets/carouselContent";
+import "./app.css";
+
+function App() {
+    const [cardsShown, setCardsShown] = useState(3);
+
     return (
-        <>
+        <div className="page">
             <Headline />
-            <Slider />
-        </>
+            <div className="main">
+                <Carousel cardsShown={cardsShown}>
+                    {carouselContent.map((content, index) => {
+                        return <Card content={content} key={index} />;
+                    })}
+                </Carousel>
+            </div>
+        </div>
     );
 }
+
+export default App;

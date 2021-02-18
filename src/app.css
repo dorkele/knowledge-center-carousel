@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Mulish", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    overflow: hidden;
+    margin-left: 5%;
+}
+
+.main {
+    max-width: 1400;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 10;
+    padding-left: 5%;
+}
