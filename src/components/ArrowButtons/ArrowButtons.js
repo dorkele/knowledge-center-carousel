@@ -1,11 +1,11 @@
 import React from "react";
 import "./arrow-buttons.css";
 
-export default function ArrowButtons() {
+export default function ArrowButtons({ prev, next }) {
     return (
         <div className="arrows">
-            <button className="left-arrow" />
-            <button className="right-arrow" />
+            <button onClick={prev} className="left-arrow" />
+            <button onClick={next} className="right-arrow" />
         </div>
     );
 }
