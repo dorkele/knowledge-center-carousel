@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Headline from "./components/Headline/Headline";
 import Carousel from "./components/Carousel/Carousel";
 import Card from "./components/Card/Card";
+import BlurOverlay from "./components/BlurOverlay/BlurOverlay";
 
 import { carouselContent } from "./assets/carouselContent";
 import "./app.css";
@@ -20,6 +21,7 @@ function App() {
                     })}
                 </Carousel>
             </div>
+            <BlurOverlay />
         </div>
     );
 }
