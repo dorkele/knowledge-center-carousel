@@ -1,0 +1,44 @@
+.arrows {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 3%;
+    left: 6%;
+}
+
+.left-arrow,
+.right-arrow {
+    position: relative;
+    z-index: 1;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    border: 1px solid #31135e;
+    margin-right: 20px;
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    background-color: #31135e;
+}
+
+.left-arrow {
+    background-image: url("../../assets/images/left-purple-arrow.png");
+}
+
+.left-arrow:hover {
+    background-image: url("../../assets/images/left-white-arrow.png");
+}
+
+.right-arrow:hover {
+    background-image: url("../../assets/images/right-white-arrow.png");
+}
+
+.right-arrow {
+    background-image: url("../../assets/images/right-purple-arrow.png");
+}
